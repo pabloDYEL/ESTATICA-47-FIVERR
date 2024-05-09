@@ -1,0 +1,2332 @@
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    .section-n1, .section-n2, .section-n3, .section-n4{
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 auto;
+        width: 100%;
+        >:nth-child(1), >:nth-child(2){
+            width: 89%;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+    }
+    .section-n1, .section-n2, .section-n4{
+        background: rgb(255, 255, 255);
+    }
+    .section-n2{
+        background: linear-gradient(115deg, rgba(150, 237, 182, 0.04) 0%, rgba(38, 212, 104, 0.04) 99.98%);
+        background: #0090FF;
+    }
+}
+
+body{
+    .section-n1{
+        >:nth-child(1){
+            .center-fix-header{
+                background: white;
+                box-shadow: rgba(56, 68, 85, 0.16) 0px 12px 18px 0px;
+                margin: 0 auto;
+                position: fixed;
+                width: 89%;
+                max-width: 1250px;
+                margin: 0 auto;
+                z-index: 100;
+                margin-top: 22.5px;
+                border-radius: 1rem;
+                .fixed-header{
+                    width: 95.5%;
+                    margin: 0 auto;
+                    padding: 15px 0px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    >:nth-child(1){
+                        >:nth-child(1){
+                            width: 100%;
+                            max-width: 7.35rem;
+                            img{
+                                width: 100%;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: flex-end;
+                        gap: 1.18rem;
+                        align-items: center;
+                        >:nth-child(1){
+                            a{
+                                all: unset;
+                                cursor: pointer;
+                                color: rgb(6, 21, 43);
+                                text-align: right;
+                                font-family: "Merriweather Sans";
+                                font-size: 1rem;
+                                font-style: normal;
+                                font-weight: 500;
+                                &:hover{
+                                    color: #0090FF;
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            a{
+                                all: unset;
+                                text-decoration: none;
+                                display: flex;
+                                flex-flow: row nowrap;
+                                align-items: center;
+                                border-radius: 1rem;
+                                background: linear-gradient(rgb(168, 240, 194) -1.81%, rgb(116, 231, 158) 44.32%, rgb(36, 211, 102) 89.04%);
+                                box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px;
+                                transition: 2s;
+                                transition: opacity .95s;
+                                gap: .5rem;
+                                padding: 0px 1.25rem;
+                                cursor: pointer;
+                                &:hover{
+                                    background: linear-gradient(rgb(180, 242, 202) -1.81%, rgb(133, 233, 169) 44.32%, rgb(80, 220, 133) 89.04%);
+                                    opacity: 0.95;
+                                }
+                                >:nth-child(1){
+                                    width: 100%;
+                                    max-width: 1.5rem;   
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                >:nth-child(2){
+                                    h3{
+                                        color: white;
+                                        font-family: "Merriweather Sans";
+                                        font-size: 1.125rem;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                            &:active {
+                                transform: scale(0.909931) translateZ(0px);
+                            }
+                        }
+                    }
+                }
+            }
+            header{
+                display: flex;
+                flex-flow: column wrap;
+                >:nth-child(1){
+                    width: 100%;
+                    margin-top: 22.5px;
+                    margin-bottom: 52.5px;
+                    opacity: 0;
+                    visibility: hidden;
+                    .fixed-header{
+                        width: 97%;
+                        margin: 0 auto;
+                        padding: 15px 0px;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        opacity: 0;
+                        visibility: hidden;
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                width: 100%;
+                                max-width: 7rem;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: flex-end;
+                            gap: 1.5rem;
+                            align-items: center;
+                            >:nth-child(1){
+                                a{
+                                    all: unset;
+                                }
+                            }
+                            >:nth-child(2){
+                                a{
+                                    all: unset;
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    align-items: center;
+                                    gap: .5rem;
+                                    padding: 0px 1rem;
+                                    >:nth-child(1){
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: 1.125rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: flex-start;
+                    margin-top: 1.45rem;
+                    >div{
+                        display: flex;
+                        flex-flow: column wrap;
+                    }
+                    >:nth-child(1){
+                        width: 58.3%;
+                        margin-top: -1.45rem;
+                        >:nth-child(1){
+                            margin-top: -.5rem;
+                            h1{
+                                color: rgb(6, 21, 43);
+                                font-family: "Merriweather Sans";
+                                font-size: 3rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 4.4rem;
+                                span{
+                                    border-radius: 3.125rem 3.125rem 3rem;
+                                    background: var(--Gradient, linear-gradient(180deg, #A8F0C2 -1.81%, #74E79E 44.32%, #24D366 89.04%));
+                                    color: rgb(255, 255, 255);
+                                    text-align: center;
+                                    font-family: "Merriweather Sans";
+                                    font-size: 3rem;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    padding: 0.5rem 1.87rem;
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 80%;
+                            margin-top: -1.5rem;
+                            p{
+                                color: rgba(6, 21, 43, 0.8);
+                                font-family: "Merriweather Sans";
+                                font-size: 1.125rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 1.5rem;
+                                letter-spacing: 0.03125rem;
+                                opacity: 0.8;
+                            }
+                        }
+                        >:nth-child(3){
+                            a{
+                                all: unset;
+                                display: inline-flex;
+                                padding: 0rem 1.25rem;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                gap: 0.5rem;
+                                border-radius: 1rem;
+                                background: linear-gradient(rgb(168, 240, 194) -1.81%, rgb(116, 231, 158) 44.32%, rgb(36, 211, 102) 89.04%);
+                                box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px;
+                                margin-top: .80rem;
+                                transition: .3s;
+                                cursor: pointer;
+                                &:hover{
+                                    background: linear-gradient(rgb(180, 242, 202) -1.81%, rgb(133, 233, 169) 44.32%, rgb(80, 220, 133) 89.04%);
+                                    opacity: 0.95;
+                                }
+                                &:active {
+                                    transform: scale(0.909931) translateZ(0px);
+                                    transition: .3s;
+                                    cursor: pointer;
+                                }
+                                >:nth-child(1){
+                                    width: 100%;
+                                    max-width: 1.50rem;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                >:nth-child(2){
+                                    h3{
+                                        color: rgb(255, 255, 255);
+                                        text-align: center;
+                                        font-family: "Merriweather Sans";
+                                        font-size: 1.125rem;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                           
+                        }
+                    }
+                    >:nth-child(2){
+                        width: 41.7%;
+                        background: pink;
+                        align-items: center;
+                        border-radius: 1.5rem;
+                        background: rgb(255, 255, 255);
+                        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 16px 0px;
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        justify-content: center;
+                        form{
+                            width: 82.5%;
+                            display: flex;
+                            flex-flow: column wrap;
+                            padding-bottom: 2rem;
+                            >:nth-child(1){
+                                text-align: center;
+                                h2{
+                                    color: rgb(6, 21, 43);
+                                    text-align: center;
+                                    font-family: "Merriweather Sans";
+                                    font-size: 2.5rem;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    span{
+                                        color: rgb(37, 211, 102);
+                                        font-family: "Merriweather Sans";
+                                        font-size: 2.5rem;
+                                        font-style: italic;
+                                        font-weight: 600;
+                                        line-height: 3rem;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                display: flex;
+                                flex-flow: column wrap;
+                                gap: 1.15rem;
+                                >:nth-child(1){
+                                    display: flex;
+                                    flex-flow: column wrap;
+                                    gap: 1.15rem;
+                                    >:nth-child(1), >:nth-child(2){
+                                        display: flex;
+                                        flex-flow: column wrap;
+                                        gap: .75rem;
+                                        label{
+                                            color: rgb(15, 23, 42);
+                                            font-family: "Merriweather Sans";
+                                            font-size: 1rem;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                        }
+                                        input{
+                                            font-family: "Merriweather Sans";
+                                            letter-spacing: inherit;
+                                            color: currentcolor;
+                                            border: 0px;
+                                            box-sizing: content-box;
+                                            background: none;
+                                            height: 1.4375em;
+                                            margin: 0px;
+                                            display: block;
+                                            width: 92%;
+                                            
+                                            padding: 16.5px 14px;
+                                            border: 1px solid #E5E7EB;
+                                            border-radius: 1rem;
+                                            color: #809FB8;
+                                            font-weight: 500;
+                                            &::placeholder{
+                                                color: #CAD7E1;
+                                                font-weight: 500;
+                                            }
+                                            &:focus {
+                                                all: unset;
+                                                font-family: "Merriweather Sans"; 
+                                                letter-spacing: inherit; 
+                                                color: currentcolor;
+                                                border: 1px solid #E5E7EB;
+                                                border-radius: 1rem;
+                                                background: none;
+                                                height: 1.4375em;
+                                                margin: 0px;
+                                                display: block;
+                                                min-width: 0px; 
+                                                width: 92%;
+                                                padding: 16.5px 14px; 
+                                                color: #809FB8; 
+                                                font-weight: 300;
+                                            }
+                                        }
+                                    }
+
+                                }
+                                >:nth-child(2){
+                                    button{
+                                        all: unset;
+                                        width: 100%;
+                                        display: flex;
+                                        flex-flow: row nowrap;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 1rem;
+                                        background: linear-gradient(rgb(168, 240, 194) -1.81%, rgb(116, 231, 158) 44.32%, rgb(36, 211, 102) 89.04%);
+                                        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px;
+                                        transition: 2s;
+                                        transition: opacity .95s;
+                                        gap: .5rem;
+                                        cursor: pointer;
+                                        height: 55px;
+                                        &:hover{
+                                            background: linear-gradient(rgb(180, 242, 202) -1.81%, rgb(133, 233, 169) 44.32%, rgb(80, 220, 133) 89.04%);
+                                            opacity: 0.95;
+                                        }
+                                        >div{
+                                            width: 100%;
+                                            max-width: 1.15rem;
+                                            img{
+                                                width: 100%;
+                                            }
+                                        }
+                                        h4{
+                                            color: white;
+                                            font-family: "Merriweather Sans";
+                                            font-size: 1.1rem;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FIX HEADER //
+
+@media (max-width:850px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                .center-fix-header{
+                    .fixed-header{
+                        padding: 7.5px 0px;
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                max-width: 6rem;
+                            }
+                        }
+                        >:nth-child(2){
+                            gap: 1rem;
+                            >:nth-child(1){
+                                a{
+                                    font-size: .8rem;
+                                }
+                            }
+                            >:nth-child(2){
+                                a{
+                                    gap: .35rem;
+                                    padding: 0px .5rem;
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                .center-fix-header{
+                    .fixed-header{
+                        padding: 5px 0px;
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                max-width: 5rem;
+                            }
+                        }
+                        >:nth-child(2){
+                            gap: .5rem;
+                            >:nth-child(1){
+                                a{
+                                    font-size: .8rem;
+                                }
+                            }
+                            >:nth-child(2){
+                                a{
+                                    gap: .3rem;
+                                    padding: 0px .35rem;
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: .9rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                .center-fix-header{
+                    .fixed-header{
+                        padding: 3px 0px;
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                max-width: 3.5rem;
+                            }
+                        }
+                        >:nth-child(2){
+                            gap: .35rem;
+                            >:nth-child(1){
+                                a{
+                                    font-size: .7rem;
+                                }
+                            }
+                            >:nth-child(2){
+                                a{
+                                    gap: .25rem;
+                                    padding: 0px .25rem;
+                                    >:nth-child(1){
+                                        width: 100%;
+                                        max-width: .9rem;   
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: .7rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FIX HEADER //
+
+
+// section-n1 //
+
+@media(max-width: 1280px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                header{
+                    display: flex;
+                    flex-flow: column wrap;
+                    >:nth-child(2){
+                        flex-flow: column wrap;
+                        align-items: center;
+                        gap: 1.5rem;
+                        >div{
+                            flex-flow: column wrap;
+                            align-items: center;
+                        }
+                        >:nth-child(1){
+                            width: 100%;
+                            >:nth-child(1){
+                                margin-top: -.5rem;
+                                h1{
+                                    font-size: 3rem;
+                                    line-height: 4.4rem;
+                                    br{
+                                        display: none;
+                                    }
+                                    span{
+                                        font-size: 3rem;
+                                        padding: 0.5rem 1.87rem;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                width: 100%;
+                                display: flex;
+                                flex-flow: row wrap;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                                p{
+                                    font-size: 1.125rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: 0.03125rem;
+                                    opacity: 0.8;
+                                }
+                            }
+                            >:nth-child(3){
+                                a{
+                                    padding: 0rem 1.25rem;
+                                    gap: 0.5rem;
+                                    border-radius: 1rem;
+                                    margin-top: .80rem;
+                                    >:nth-child(1){
+                                        max-width: 1.50rem;
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: 1.125rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 46%;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+                            form{
+                                width: 82.5%;
+                                padding-bottom: 2rem;
+                                >:nth-child(1){
+                                    h2{
+                                        font-size: 2.5rem;
+                                        span{
+                                            font-size: 2.5rem;
+                                            line-height: 3rem;
+                                        }
+                                    }
+                                }
+                                >:nth-child(2){
+                                    display: flex;
+                                    flex-flow: column wrap;
+                                    gap: 1rem;
+                                    >:nth-child(1){
+                                        gap: 1.15rem;
+                                        >:nth-child(1), >:nth-child(2){
+                                            gap: .75rem;
+                                            label{
+                                                font-size: 1rem;
+                                            }
+                                            input{
+                                                height: 1.4375em;
+                                                width: 92%;
+                                                padding: 16.5px 14px;
+                                            }
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        button{
+                                            height: 55px;
+                                            >div{
+                                                max-width: 1.1rem;
+                                            }
+                                            h4{
+                                                font-size: 1.1rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1160px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                header{
+                    >:nth-child(2){
+                        gap: 1.75rem;
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                margin-top: -.5rem;
+                                h1{
+                                    font-size: 2.5rem;
+                                    line-height: 4.4rem;
+                                    br{
+                                        display: none;
+                                    }
+                                    span{
+                                        font-size: 2.5rem;
+                                        padding: 0.5rem 1.87rem;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                p{
+                                    font-size: 1rem;
+                                    line-height: 1.5rem;
+                                }
+                            }
+                            >:nth-child(3){
+                                a{
+                                    padding: 0rem 1.25rem;
+                                    gap: 0.5rem;
+                                    border-radius: 1rem;
+                                    margin-top: .80rem;
+                                    >:nth-child(1){
+                                        max-width: 1.35rem;
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 60%;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+                            form{
+                                width: 82.5%;
+                                padding-bottom: 2rem;
+                                >:nth-child(1){
+                                    h2{
+                                        font-size: 2rem;
+                                        span{
+                                            font-size: 2rem;
+                                            line-height: 3rem;
+                                        }
+                                    }
+                                }
+                                >:nth-child(2){
+                                    gap: 1rem;
+                                    >:nth-child(1){
+                                        gap: 1.15rem;
+                                        >:nth-child(1), >:nth-child(2){
+                                            gap: .75rem;
+                                            label{
+                                                font-size: .8rem;
+                                            }
+                                            input{
+                                                font-size: .9rem;
+                                                height: 1.4375em;
+                                                width: 92%;
+                                                padding: 16.5px 14px;
+                                            }
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        button{
+                                            height: 50px;
+                                            >div{
+                                                max-width: 1rem;
+                                            }
+                                            h4{
+                                                font-size: 1rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 750px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                header{
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            gap: .75rem;
+                            >:nth-child(1){
+                                margin-top: -3rem;
+                                h1{
+                                    font-size: 2rem;
+                                    line-height: 3.5rem;
+                                    text-align: center;
+                                    br{
+                                        display: block;
+                                    }
+                                    span{
+                                        font-size: 2rem;
+                                        padding: 0.5rem 1.87rem;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                p{
+                                    font-size: .9rem;
+                                    line-height: 1.45rem;
+                                }
+                            }
+                            >:nth-child(3){
+                                a{
+                                    padding: 0rem 1.25rem;
+                                    gap: 0.5rem;
+                                    border-radius: 1rem;
+                                    margin-top: .80rem;
+                                    >:nth-child(1){
+                                        max-width: 1.25rem;
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: .9rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 62.5%;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+                            form{
+                                width: 82.5%;
+                                padding-bottom: 2rem;
+                                >:nth-child(1){
+                                    h2{
+                                        font-size: 1.75rem;
+                                        span{
+                                            font-size: 1.75rem;
+                                            line-height: 3rem;
+                                        }
+                                    }
+                                }
+                                >:nth-child(2){
+                                    gap: 1rem;
+                                    >:nth-child(1){
+                                        gap: 1.15rem;
+                                        >:nth-child(1), >:nth-child(2){
+                                            gap: .75rem;
+                                            label{
+                                                font-size: .8rem;
+                                            }
+                                            input{
+                                                font-size: .8rem;
+                                                height: 1.4375em;
+                                                width: 92%;
+                                                padding: 16.5px 14px;
+                                            }
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        button{
+                                            height: 45px;
+                                            >div{
+                                                max-width: .9rem;
+                                            }
+                                            h4{
+                                                font-size: .9rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 590px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                header{
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            gap: .75rem;
+                            >:nth-child(1){
+                                margin-top: -3rem;
+                                h1{
+                                    font-size: 1.75rem;
+                                    line-height: 3.5rem;
+                                    text-align: center;
+                                    br{
+                                        display: block;
+                                    }
+                                    span{
+                                        font-size: 1.75rem;
+                                        padding: 0.5rem 1.87rem;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                p{
+                                    font-size: .85rem;
+                                    line-height: 1.45rem;
+                                }
+                            }
+                            >:nth-child(3){
+                                a{
+                                    padding: 0rem 1.25rem;
+                                    gap: 0.5rem;
+                                    border-radius: 1rem;
+                                    margin-top: .80rem;
+                                    >:nth-child(1){
+                                        max-width: 1.20rem;
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: .85rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 80%;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+                            form{
+                                width: 82.5%;
+                                padding-bottom: 2rem;
+                                >:nth-child(1){
+                                    h2{
+                                        font-size: 1.60rem;
+                                        span{
+                                            font-size: 1.60rem;
+                                            line-height: 3rem;
+                                        }
+                                    }
+                                }
+                                >:nth-child(2){
+                                    gap: 1rem;
+                                    >:nth-child(1){
+                                        gap: 1.15rem;
+                                        >:nth-child(1), >:nth-child(2){
+                                            gap: .75rem;
+                                            label{
+                                                font-size: .8rem;
+                                            }
+                                            input{
+                                                font-size: .8rem;
+                                                height: 1.4375em;
+                                                width: 92%;
+                                                padding: 16.5px 14px;
+                                            }
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        button{
+                                            height: 40px;
+                                            >div{
+                                                max-width: .8rem;
+                                            }
+                                            h4{
+                                                font-size: .8rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 465px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                header{
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            gap: .75rem;
+                            >:nth-child(1){
+                                margin-top: -4rem;
+                                h1{
+                                    font-size: 1.5rem;
+                                    line-height: 3.5rem;
+                                    text-align: center;
+                                    br{
+                                        display: block;
+                                    }
+                                    span{
+                                        font-size: 1.5rem;
+                                        padding: 0.5rem 1.87rem;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                p{
+                                    font-size: .8rem;
+                                    line-height: 1.45rem;
+                                    br{
+                                        display: none;
+                                    }
+                                    
+                                }
+                            }
+                            >:nth-child(3){
+                                a{
+                                    padding: 0rem 1.25rem;
+                                    gap: 0.5rem;
+                                    border-radius: 1rem;
+                                    margin-top: .80rem;
+                                    >:nth-child(1){
+                                        max-width: 1.20rem;
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: .8rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 85%;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+                            form{
+                                width: 82.5%;
+                                padding-bottom: 2rem;
+                                >:nth-child(1){
+                                    h2{
+                                        font-size: 1.4rem;
+                                        span{
+                                            font-size: 1.4rem;
+                                            line-height: 3rem;
+                                        }
+                                    }
+                                }
+                                >:nth-child(2){
+                                    gap: 1rem;
+                                    >:nth-child(1){
+                                        gap: 1.15rem;
+                                        >:nth-child(1), >:nth-child(2){
+                                            gap: .75rem;
+                                            label{
+                                                font-size: .8rem;
+                                            }
+                                            input{
+                                                font-size: .8rem;
+                                                height: 1.4375em;
+                                                width: 92%;
+                                                padding: 16.5px 14px;
+                                            }
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        button{
+                                            height: 40px;
+                                            >div{
+                                                max-width: .8rem;
+                                            }
+                                            h4{
+                                                font-size: .8rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 465px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                header{
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            gap: .75rem;
+                            >:nth-child(1){
+                                margin-top: -4rem;
+                                h1{
+                                    font-size: 1.5rem;
+                                    line-height: 3.5rem;
+                                    text-align: center;
+                                    br{
+                                        display: block;
+                                    }
+                                    span{
+                                        font-size: 1.5rem;
+                                        padding: 0.5rem 1.87rem;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                p{
+                                    font-size: .8rem;
+                                    line-height: 1.45rem;
+                                    br{
+                                        display: none;
+                                    }
+                                    
+                                }
+                            }
+                            >:nth-child(3){
+                                a{
+                                    padding: 0rem 1.25rem;
+                                    gap: 0.5rem;
+                                    border-radius: 1rem;
+                                    margin-top: .80rem;
+                                    >:nth-child(1){
+                                        max-width: 1.20rem;
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: .8rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 85%;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+                            form{
+                                width: 82.5%;
+                                padding-bottom: 2rem;
+                                >:nth-child(1){
+                                    h2{
+                                        font-size: 1.4rem;
+                                        span{
+                                            font-size: 1.4rem;
+                                            line-height: 3rem;
+                                        }
+                                    }
+                                }
+                                >:nth-child(2){
+                                    gap: 1rem;
+                                    >:nth-child(1){
+                                        gap: 1.15rem;
+                                        >:nth-child(1), >:nth-child(2){
+                                            gap: .75rem;
+                                            label{
+                                                font-size: .8rem;
+                                            }
+                                            input{
+                                                font-size: .8rem;
+                                                height: 1.4375em;
+                                                width: 92%;
+                                                padding: 16.5px 14px;
+                                            }
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        button{
+                                            height: 40px;
+                                            >div{
+                                                max-width: .8rem;
+                                            }
+                                            h4{
+                                                font-size: .8rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                header{
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            gap: .75rem;
+                            >:nth-child(1){
+                                margin-top: -5.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 320px){
+    body{
+        .section-n1{
+            >:nth-child(1){
+                header{
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            gap: .75rem;
+                            >:nth-child(1){
+                                h1{
+                                    font-size: 1.25rem;
+                                    line-height: 3.5rem;
+                                    text-align: center;
+                                    br{
+                                        display: block;
+                                    }
+                                    span{
+                                        font-size: 1.25rem;
+                                        padding: 0.5rem 1.87rem;
+                                    }
+                                }
+                            }
+                            >:nth-child(2){
+                                p{
+                                    font-size: .7rem;
+                                    line-height: 1.45rem;
+                                    br{
+                                        display: none;
+                                    }
+                                    
+                                }
+                            }
+                            >:nth-child(3){
+                                a{
+                                    padding: 0rem 1.25rem;
+                                    gap: 0.5rem;
+                                    border-radius: 1rem;
+                                    margin-top: .80rem;
+                                    >:nth-child(1){
+                                        max-width: 1.1rem;
+                                    }
+                                    >:nth-child(2){
+                                        h3{
+                                            font-size: .7rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 85%;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+                            form{
+                                width: 82.5%;
+                                padding-bottom: 2rem;
+                                >:nth-child(1){
+                                    h2{
+                                        font-size: 1.25rem;
+                                        span{
+                                            font-size: 1.25rem;
+                                            line-height: 3rem;
+                                        }
+                                    }
+                                }
+                                >:nth-child(2){
+                                    gap: 1rem;
+                                    >:nth-child(1){
+                                        gap: 1.15rem;
+                                        >:nth-child(1), >:nth-child(2){
+                                            gap: .75rem;
+                                            label{
+                                                font-size: .8rem;
+                                            }
+                                            input{
+                                                font-size: .7rem;
+                                                height: 1.4375em;
+                                                width: 92%;
+                                                padding: 16.5px 14px;
+                                            }
+                                        }
+                                    }
+                                    >:nth-child(2){
+                                        button{
+                                            height: 40px;
+                                            >div{
+                                                max-width: .8rem;
+                                            }
+                                            h4{
+                                                font-size: .8rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// section-n1 //
+
+// section-n2 //
+
+body{
+    .section-n2{
+        background: linear-gradient(115deg, rgba(150, 237, 182, 0.04) 0%, rgba(38, 212, 104, 0.04) 99.98%);
+        box-shadow: 200px 0px 100px  #eefff6;
+        margin-top: 6rem;
+        padding-bottom: 1rem;
+        nav{
+            display: flex;
+            flex-flow: column wrap;
+            gap: 3.15rem;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: column wrap;
+                gap: 1rem;
+                >:nth-child(1){
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: center;
+                    width: 10rem;
+                    padding: .3rem .35rem;
+                    gap: 0.5rem;
+                    border-radius: 3.125rem;
+                    background: var(--Gradient, linear-gradient(180deg, #A8F0C2 -1.81%, #74E79E 44.32%, #24D366 89.04%));
+                    >:nth-child(1){
+                        width: 100%;
+                        max-width: 1.45rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    >:nth-child(2){
+                        h3{
+                            all: unset;
+                            font-size: 1.125rem;
+                            color: rgb(255, 255, 255);
+                            font-family: "Merriweather Sans";
+                            font-size: 1.125rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    h3{
+                        all: unset;
+                        color: rgb(6, 21, 43);
+                        font-family: "Merriweather Sans";
+                        font-size: 2.65rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            >:nth-child(2){
+                .Container {
+                    .ag-timeline {
+                        display: flex;
+                        flex-flow: row wrap;
+                        position: relative;
+                        justify-content: flex-start;
+                        width: 100%;
+                        .ag-timeline_line {
+                            width: 4.5px;
+                            background-color: #D9E1E7;
+                            position: absolute;
+                            top: 0;
+                            left: 1%;
+                            height: 95%;
+                            .ag-timeline_line-progress {
+                                width: 100%;
+                                height: 20%;
+                                background-color: #74E79E;
+                            }
+                        }
+                        .patch{
+                            width: 10px;
+                            height: 70px;
+                            background: white;
+                            bottom: 0%;
+                            left: .75%;
+                            position: absolute;
+                        }
+                        .contain-lists{
+                            display: flex;
+                            flex-flow: column wrap;
+                            gap: 4.2rem;
+                            .ag-timeline_list{
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: flex-end;
+                                width: 100%;
+                                .ag-timeline_item {
+                                    width: 96.5%;
+                                    .ag-timeline-card_item{
+                                        width: 45%;
+                                        display: flex;
+                                        flex-flow: column wrap;
+                                        gap: .25rem;
+                                        >:nth-child(1){
+                                            span{
+                                                all: unset;
+                                                color: rgba(6, 21, 43, 0.8);
+                                                font-family: "Merriweather Sans";
+                                                font-size: 0.875rem;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                letter-spacing: 0.03125rem;
+                                                opacity: 0.6;
+                                            }
+                                        }
+                                        >:nth-child(2){
+                                            h3{
+                                                all: unset;
+                                                color: rgb(6, 21, 43);
+                                                font-family: "Merriweather Sans";
+                                                font-size: 2rem;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                text-transform: capitalize;
+                                            }
+                                        }
+                                        >:nth-child(3){
+                                            p{
+                                                all: unset;
+                                                color: rgba(6, 21, 43, 0.8);
+                                                font-family: "Merriweather Sans";
+                                                font-size: 1.125rem;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                letter-spacing: 0.03125rem;
+                                                opacity: 0.6;
+                                                line-height: 1.5rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }               
+                    }
+                }
+            }
+            >:nth-child(3){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: flex-start;
+                margin-top: 1.75rem;
+                >:nth-child(1){
+                    width: 45.8%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    margin-top: -2rem;
+                    >:nth-child(1){
+                        h2{
+                            color: rgb(6, 21, 43);
+                            font-family: "Merriweather Sans";
+                            font-size: 2.65rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 3.5rem;
+                        }
+                    }
+                    >:nth-child(2){
+                        width: 70%;
+                        margin-top: -2rem;
+                        p{
+                            color: rgba(6, 21, 43, 0.8);
+                            font-family: "Merriweather Sans";
+                            font-size: 1.125rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.5rem;
+                            letter-spacing: 0.03125rem;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    width: 54.2%;
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    gap: 1.5rem;
+                    >div{
+                        border-radius: 1.5rem;
+                        background: rgb(255, 255, 255);
+                        box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 16px 0px;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                        padding: 2.5rem 0rem;
+                        >div{
+                            width: 87%;
+                            display: flex;
+                            flex-flow: column wrap;
+                            >:nth-child(1){
+                                all: unset;
+                                color: rgb(6, 21, 43);
+                                font-family: "Merriweather Sans";
+                                font-size: 1.675rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 2.5rem;
+                                text-transform: capitalize;
+                            }
+                            >:nth-child(2){
+                                all: unset;
+                                color: rgba(6, 21, 43, 0.8);
+                                font-family: "Merriweather Sans";
+                                font-size: 1.125rem;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 1.5rem;
+                                letter-spacing: 0.03125rem;
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: 1280px){
+    body{
+        .section-n2{
+            margin-top: 6.5rem;
+            >:nth-child(1){
+                width: 77.7%;
+                max-width: 1250px;
+            }
+            nav{
+                >:nth-child(1){
+                    >:nth-child(1){
+                        width: 10rem;
+                        padding: .3rem .35rem;
+                        gap: 0.5rem;
+                        >:nth-child(1){
+                            max-width: 1.45rem;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    .Container {
+                        .ag-timeline {
+                            .contain-lists{
+                                .ag-timeline_list{
+                                    .ag-timeline_item {
+                                        .ag-timeline-card_item{
+                                            width: 75%;
+                                            gap: .25rem;
+                                        }
+                                    }
+                                }
+                            }               
+                        }
+                    }
+                }
+                >:nth-child(3){
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin-top: 4rem;
+                    gap: 1.5rem; 
+
+                    >:nth-child(1){
+                        width: 100%;
+                        flex-flow: column wrap;
+                        align-items: center;
+                        text-align: center;
+                        margin-top: -2rem;
+
+                        >:nth-child(1){
+                            h2{
+                                font-size: 2.65rem;
+                                br{
+                                    display: none;
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 100%;
+                            margin-top: -2rem;
+                            p{
+                                font-size: 1.125rem;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        margin: 0 auto;
+                        width: 70%;
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 1.5rem;
+                        >div{
+                            padding: 2.5rem 0rem;
+                            >div{
+                                width: 90%;
+                                gap: 1rem;
+                                >:nth-child(2){
+                                    font-size: 1.125rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }    
+}
+
+@media (max-width: 850px){
+    body{
+        .section-n2{
+            margin-top: 6.5rem;
+            >:nth-child(1){
+                width: 80%;
+            }
+            nav{
+                gap: 3rem;
+                >:nth-child(1){
+                    gap: 1rem; 
+                    >:nth-child(1){
+                        width: 9rem;
+                        padding: .3rem .35rem;
+                        gap: 0.5rem;
+                        >:nth-child(1){
+                            max-width: 1.25rem;
+                        }
+                        >:nth-child(2){
+                            h3{
+                                font-size: 1rem; 
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        h3{
+                            font-size: 2.2rem; 
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    .Container {
+                        .ag-timeline {
+                            .ag-timeline_line {
+                                width: 4px;
+                            }
+                            .contain-lists{
+                                .ag-timeline_list{
+                                    .ag-timeline_item {
+                                        width: 93.5%;
+                                        .ag-timeline-card_item{
+                                            width: 80%;
+                                            >:nth-child(1){
+                                                span{
+                                                    font-size: 0.8rem;
+                                                }
+                                            }
+                                            >:nth-child(2){
+                                                h3{
+                                                    font-size: 1.5rem;
+                                                }
+                                            }
+                                            >:nth-child(3){
+                                                p{
+                                                    line-height: 1.35rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }               
+                        }
+                    }
+                }
+                >:nth-child(3){
+                    margin-top: 3rem;
+                    gap: 1.35rem; 
+                    >:nth-child(1){
+                        margin-top: -2rem;
+                        >:nth-child(1){
+                            h2{
+                                font-size: 2rem;
+                            }
+                        }
+                        >:nth-child(2){
+                            margin-top: -2rem;
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        width: 90%;
+                        gap: 1.35rem;
+                        >div{
+                            padding: 2.35rem 0rem;
+                            >div{
+                                width: 90%;
+                                gap: 1rem;
+                                >:nth-child(1){
+                                    font-size: 1.5rem; 
+                                    }
+                                >:nth-child(2){
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }    
+}
+
+@media (max-width: 500px){
+    body{
+        .section-n2{
+            margin-top: 5rem;
+            >:nth-child(1){
+                width: 89%;
+            }
+            nav{
+                gap: 2.75rem;
+                >:nth-child(1){
+                    gap: 1rem; 
+                    >:nth-child(1){
+                        width: 8.5rem;
+                        padding: .3rem .35rem;
+                        gap: 0.5rem;
+                        >:nth-child(1){
+                            max-width: 1rem;
+                        }
+                        >:nth-child(2){
+                            h3{
+                                font-size: 1rem; 
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        h3{
+                            font-size: 2rem; 
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    .Container {
+                        .ag-timeline {
+                            .ag-timeline_line {
+                            }
+                            .contain-lists{
+                                .ag-timeline_list{
+                                    .ag-timeline_item {
+                                        width: 93.5%;
+                                        .ag-timeline-card_item{
+                                            width: 100%;
+                                            >:nth-child(1){
+                                                span{
+                                                    font-size: 0.7rem;
+                                                }
+                                            }
+                                            >:nth-child(2){
+                                                h3{
+                                                    font-size: 1.25rem;
+                                                }
+                                            }
+                                            >:nth-child(3){
+                                                p{
+                                                    line-height: 1.35rem;
+                                                    font-size: .8rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }               
+                        }
+                    }
+                }
+                >:nth-child(3){
+                    margin-top: 2.75rem;
+                    gap: 1.25rem; 
+                    >:nth-child(1){
+                        margin-top: -1.75rem;
+                        >:nth-child(1){
+                            h2{
+                                font-size: 1.75rem;
+                            }
+                        }
+                        >:nth-child(2){
+                            margin-top: -2rem;
+                            p{
+                                font-size: .875rem; 
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        width: 90%;
+                        gap: 1.35rem;
+                        >div{
+                            padding: 2.35rem 0rem;
+                            >div{
+                                width: 90%;
+                                gap: 1rem;
+                                >:nth-child(1){
+                                    font-size: 1.35rem; 
+                                    }
+                                >:nth-child(2){
+                                    font-size: .875rem; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }    
+}
+
+@media (max-width: 320px){
+    body{
+        .section-n2{
+            margin-top: 4rem;
+            nav{
+                gap: 2.5rem;
+                >:nth-child(1){
+                    gap: .75rem; 
+                    >:nth-child(1){
+                        width: 7.5rem;
+                        padding: .3rem .35rem;
+                        gap: 0.5rem;
+                        >:nth-child(1){
+                            max-width: .75rem;
+                        }
+                        >:nth-child(2){
+                            h3{
+                                font-size: .75rem; 
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        h3{
+                            font-size: 1.5rem; 
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    .Container {
+                        .ag-timeline {
+                            .ag-timeline_line {
+                            }
+                            .contain-lists{
+                                .ag-timeline_list{
+                                    .ag-timeline_item {
+                                        width: 93.5%;
+                                        .ag-timeline-card_item{
+                                            width: 100%;
+                                            >:nth-child(1){
+                                                span{
+                                                    font-size: 0.7rem;
+                                                }
+                                            }
+                                            >:nth-child(2){
+                                                h3{
+                                                    font-size: 1.2rem;
+                                                }
+                                            }
+                                            >:nth-child(3){
+                                                p{
+                                                    line-height: 1.35rem;
+                                                    font-size: .75rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }               
+                        }
+                    }
+                }
+                >:nth-child(3){
+                    margin-top: 2.75rem;
+                    gap: 1.25rem; 
+                    >:nth-child(1){
+                        margin-top: -1.75rem;
+                        >:nth-child(1){
+                            h2{
+                                font-size: 1.35rem;
+                            }
+                        }
+                        >:nth-child(2){
+                            margin-top: -2rem;
+                            p{
+                                font-size: .75rem; 
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        width: 90%;
+                        gap: 1.35rem;
+                        >div{
+                            padding: 2.35rem 0rem;
+                            >div{
+                                width: 90%;
+                                gap: 1rem;
+                                >:nth-child(1){
+                                    font-size: 1.15rem; 
+                                    }
+                                >:nth-child(2){
+                                    font-size: .75rem; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }    
+}
+
+// section-n2 //
+
+// section-n3 //
+
+body{
+    .section-n3{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 5rem;
+        margin-top: 9.2rem;
+        padding-bottom: 6rem;
+        margin-bottom: 7.5rem;
+        border-bottom: 1px solid #EAECF0;
+        >:nth-child(1){
+            >:nth-child(1){
+                text-align: center;
+                h2{
+                    all: unset;
+                    font-size: 2.65rem;
+                    padding-top: 4rem;
+                    color: rgb(6, 21, 43);
+                    text-align: center;
+                    font-family: "Merriweather Sans";
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            >:nth-child(2){
+                margin: 0 auto;
+                display: flex;
+                flex-flow: column wrap;
+                gap: 1.65rem;
+                >div{
+                    border-bottom: 1px solid #EAECF0;
+                    display: flex;
+                    flex-flow: column wrap;
+                    gap: 1.65rem;
+                    padding: 2rem 0rem;
+                    >:nth-child(1){
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        cursor: pointer;
+                        >:nth-child(1){
+                            width: 90%;
+                            h2{
+                                all: unset;
+                                color: rgb(6, 21, 43);
+                                font-family: "Merriweather Sans";
+                                font-size: 1.3rem;
+                                font-style: normal;
+                                font-weight: 600;
+                            }
+
+                        }
+                        >:nth-child(2){
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            >:nth-child(1), >:nth-child(2){
+                                width: 100%;
+                                max-width: 1.5rem;
+                                img{
+                                    cursor: pointer;
+                                    width: 100%;
+                                }
+                            }
+                            >:nth-child(2){
+                                display: none;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+                        }
+
+                    }
+                    >:nth-child(2){
+                        width: 95%;
+                        position: absolute;
+                        transition: 0s;
+                        transform: translateX(-125%);
+                        >:nth-child(1){
+                            p{
+                                all: unset;
+                                color: rgba(6, 21, 43, 0.1);
+                                font-family: "Merriweather Sans";
+                                font-size: 1.125rem;
+                                font-style: normal;
+                                font-weight: 500;
+                                letter-spacing: 0.03125rem;
+                                opacity: 0.6;
+                                line-height: 1.5rem;
+                                transform: translateX(-125%);
+                            }
+                        }
+                    }
+                }
+                >:nth-child(12){
+                    border: 0px none transparent;
+                }
+                .add-info-get{
+                    >:nth-child(1){
+                        >:nth-child(2){
+                            >:nth-child(1){
+                                display: none;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+                            >:nth-child(2){
+                                display: block;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        transition: .5s;
+                        transform: translateX(0%);
+                        position: relative;
+                        animation: ease;
+                        >:nth-child(1){
+                            p{
+                                color: rgba(6, 21, 43, 0.8);
+                                transition: .6s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    body{
+        .section-n3{
+            gap: 5rem;
+            margin-top: 2rem;
+            padding-bottom: 6rem;
+            margin-bottom: 7.5rem;
+            >:nth-child(1){
+                >:nth-child(1){
+                    margin-bottom: 1.5rem;
+                    h2{
+                        font-size: 2rem;
+                        padding-top: .3rem;
+                    }
+                }
+                >:nth-child(2){
+                    gap: 1.25rem;
+                    >div{
+                        gap: 1.35rem;
+                        padding: 1.75rem 0rem;
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                h2{
+                                    font-size: 1.2rem;
+                                }
+                            }
+                            >:nth-child(2){
+                                >:nth-child(1), >:nth-child(2){
+                                    max-width: 1.35rem;
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            width: 90%;
+                            transform: translateX(-125%);
+                            >:nth-child(1){
+                                p{
+                                    font-size: 1rem;
+                                    line-height: 1.5rem;
+                                    transform: translateX(-125%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    body{
+        .section-n3{
+            gap: 5rem;
+            margin-top: 2rem;
+            padding-bottom: 6rem;
+            margin-bottom: 7.5rem;
+            >:nth-child(1){
+                >:nth-child(1){
+                    margin-bottom: 1.5rem;
+                    h2{
+                        font-size: 1.5rem;
+                        padding-top: .3rem;
+                    }
+                }
+                >:nth-child(2){
+                    gap: 1.25rem;
+                    >div{
+                        gap: 1.35rem;
+                        padding: 1.75rem 0rem;
+                        >:nth-child(1){
+                            >:nth-child(1){
+                                h2{
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                        >:nth-child(2){
+                            >:nth-child(1){
+                                p{
+                                    font-size: .875rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// section-n3 //
+
+// section-n4 //
+
+body{
+    .section-n4{
+        display: flex;
+        flex-flow: column wrap;
+        >:nth-child(1){
+            display: flex;
+            flex-flow: column wrap;
+            width: 85.15%;
+            gap: 2rem;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                >:nth-child(1){
+                    >:nth-child(1){
+                        width: 100%;
+                        max-width: 9.7rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    >:nth-child(2){
+                        h5{
+                            color: rgba(6, 21, 43, 0.8);
+                            font-family: "Merriweather Sans";
+                            font-size: 1.125rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            letter-spacing: 0.03125rem;
+                            opacity: 0.6;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    >:nth-child(1){
+                        h5{
+                            color: rgb(56, 68, 85);
+                            font-family: "Merriweather Sans";
+                            font-size: 1.125rem;
+                            font-style: normal;
+                            font-weight: 600;
+                            letter-spacing: 0.0125rem;
+                        }
+                    }
+                    >:nth-child(2){
+                        margin-top: -1.95rem;
+                        a{
+                            text-decoration: none;
+                            color: rgb(6, 21, 43);
+                            font-family: "Merriweather Sans";
+                            font-size: 1rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.5rem;
+                            letter-spacing: 0.0125rem;
+                            text-align: justify;
+                            &:hover{
+                                color: #0090FF;
+                            }
+                        }
+                    }
+                }
+            }
+            >:nth-child(2){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+                h5{
+                    color: rgb(6, 21, 43);
+                    font-family: "Merriweather Sans";
+                    font-size: 0.9375rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    letter-spacing: 0.0125rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:915px){
+    body{
+        .section-n4{
+            display: flex;
+            flex-flow: column wrap;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: column wrap;
+                width: 85.15%;
+                gap: 2rem;
+                >:nth-child(1){
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                    >:nth-child(1){
+                        >:nth-child(1){
+                            margin: 0 auto;
+                            max-width: 9.7rem;
+                        }
+                        >:nth-child(2){
+                            margin-top: 0rem;
+                            h5{
+                                font-size: 1.125rem;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            h5{
+                                font-size: 1.125rem;
+                            }
+                        }
+                        >:nth-child(2){
+                            margin-top: 0rem;
+                            a{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    h5{
+                        font-size: 0.9375rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    body{
+        .section-n4{
+            >:nth-child(1){
+                width: 85.15%;
+                gap: 1rem;
+                >:nth-child(1){
+                    >:nth-child(1){
+                        >:nth-child(1){
+                            max-width: 7rem;
+                        }
+                        >:nth-child(2){
+                            h5{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        >:nth-child(1){
+                            h5{
+                                font-size: 1rem;
+                            }
+                        }
+                        >:nth-child(2){
+                            a{
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    h5{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// section-n4 //
